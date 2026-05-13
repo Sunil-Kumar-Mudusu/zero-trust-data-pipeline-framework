@@ -1,0 +1,21 @@
+transaction_id,customer_name,email,age,amount,currency,status,account_number
+TXN-001,Alice Johnson,alice.johnson@example.com,34,250.00,USD,completed,ACC-88421
+TXN-002,Bob Martinez,bob.martinez@techcorp.io,28,1050.75,EUR,completed,ACC-33017
+TXN-003,Carol White,carol.white@webmail.net,45,89.99,GBP,completed,ACC-55234
+TXN-004,David Lee,david.lee@example.com,52,3200.00,USD,completed,ACC-72109
+TXN-005,Eva Chen,eva.chen@startup.io,31,175.50,EUR,failed,ACC-61845
+TXN-006,Frank Brown,frank.brown@mailbox.org,67,420.00,GBP,completed,ACC-94312
+TXN-007,Grace Kim,grace.kim@example.com,23,99.00,USD,completed,ACC-11789
+TXN-008,Henry Davis,henry.davis@enterprise.net,41,560.25,EUR,completed,ACC-28654
+TXN-009,Irene Lopez,irene.lopez@webmail.net,38,1800.00,GBP,completed,ACC-47001
+TXN-010,James Wilson,james.wilson@example.com,,325.00,USD,completed,ACC-83567
+TXN-011,Karen Hall,karen.hall@techcorp.io,55,640.80,EUR,completed,ACC-19234
+TXN-012,Liam Scott,liam.scott@startup.io,29,215.00,GBP,completed,ACC-36781
+TXN-013,Mia Adams,mia.adams@example.com,44,4750.00,USD,completed,ACC-52098
+TXN-014,Noah Baker,noah.baker@mailbox.org,36,88.40,EUR,completed,ACC-74563
+TXN-015,Olivia Turner,olivia.turner@webmail.net,60,1100.00,GBP,failed,ACC-90127
+TXN-016,Peter Harris,peter.harris@enterprise.net,47,780.60,USD,completed,ACC-23890
+TXN-017,Quinn Foster,quinn.foster@example.com,33,390.00,EUR,completed,ACC-41256
+TXN-018,Rachel Young,rachel.young@techcorp.io,26,155.75,GBP,completed,ACC-68034
+TXN-019,Samuel Clark,samuel.clark@startup.io,58,2900.00,USD,completed,ACC-15672
+TXN-020,Tina Lewis,tina.lewis@example.com,39,475.20,EUR,completed,ACC-87345

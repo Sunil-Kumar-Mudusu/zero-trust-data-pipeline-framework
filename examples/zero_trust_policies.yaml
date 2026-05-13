@@ -1,0 +1,59 @@
+pipeline_name: sample_zero_trust_pipeline
+version: "1.0"
+
+ingestion:
+  source_type: csv
+  delimiter: ","
+  encoding: utf-8
+
+schema:
+  required_columns:
+    - transaction_id
+    - customer_name
+    - amount
+    - currency
+    - status
+  column_schemas:
+    - name: age
+      dtype: integer
+      nullable: true
+      min_value: 18
+      max_value: 120
+    - name: amount
+      dtype: float
+      nullable: false
+      min_value: 0.0
+    - name: currency
+      dtype: string
+      nullable: false
+      allowed_values: [USD, EUR, GBP]
+    - name: status
+      dtype: string
+      nullable: false
+  max_null_rate: 0.2
+
+policy:
+  sensitive_columns:
+    - column: email
+      action: mask
+      mask_pattern: email
+    - column: account_number
+      action: mask
+      mask_pattern: last4
+  row_filters:
+    - column: status
+      operator: "ne"
+      value: "failed"
+  deny_if_sensitive_unmasked: true
+  sensitive_patterns: []
+
+trust:
+  schema_weight: 0.35
+  policy_weight: 0.40
+  integrity_weight: 0.25
+  min_trust_score: 60.0
+
+storage:
+  metadata_db: ":memory:"
+  lineage_db: ":memory:"
+  audit_db: ":memory:"
